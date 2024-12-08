@@ -227,3 +227,13 @@
   document.addEventListener('scroll', navmenuScrollspy);
 
 })();
+
+
+function downloadCV() {
+  const link = document.createElement("a");
+  link.href = "assets/img/Cv Ahmed Samy .pdf"; // Remplace par le chemin exact de ton fichier
+  link.setAttribute("download", "assets/img/Cv Ahmed Samy .pdf"); // Force le téléchargement avec un nom spécifique
+  document.body.appendChild(link); // Ajoute le lien au DOM
+  link.click(); // Simule le clic pour déclencher le téléchargement
+  document.body.removeChild(link); // Supprime le lien du DOM après le clic
+}
